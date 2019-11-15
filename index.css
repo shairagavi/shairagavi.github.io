@@ -1,0 +1,131 @@
+header {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 10px;
+  font-family: Geneva;
+  text-align: center;
+  width: 99%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Style the header links */
+header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+header a.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Didot;
+}
+
+/* Change the background color on mouse-over */
+header a:hover {
+  text-decoration: underline;
+  background-color: #ddd;
+  color: rgb(14, 148, 135);
+}
+
+/* Style the active/current link*/
+header a.active {
+  text-decoration: underline;
+  color: rgb(141, 13, 141);
+}
+
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+body {
+  background-color: rgb(0, 177, 103);
+}
+
+#search {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  padding: 12px;
+  border-radius: 25px;
+  box-shadow: 5px 5px grey;
+  background-color: white;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home-image {
+  border-width: 10px;
+  border-style: solid;
+  border-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#dictionary {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 12px;
+  background-color: white;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+#noun {
+  font-size: 25px;
+  color: rgb(79, 94, 231);
+}
+
+#pronounce {
+  font-size: 20px;
+  color: rgb(51, 61, 146);
+}
+
+#def-head {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(10, 16, 105);
+}
+
+#definition {
+  font-size: 20px;
+  color: rgb(17, 19, 37);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  color: whitesmoke;
+  background-color: black;
+  text-align: center;
+  font-family: Copperplate;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
